@@ -3,121 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kimjang Ventures | 김앤장벤처스</title>
+  <title>KimJang Ventures</title>
+  <meta name="description" content="AI 기반 앱 서비스 인수·운영 — KimJang Ventures" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-    header {
-      padding: 48px 32px 32px;
-      border-bottom: 1px solid #eee;
-    }
-    .logo {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-    }
-    .logo span { color: #888; font-weight: 400; font-size: 14px; margin-left: 8px; }
-    main {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 64px 32px;
-    }
-    h1 {
-      font-size: 36px;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      letter-spacing: -0.5px;
-    }
-    .subtitle {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 40px;
-    }
-    .divider {
-      border: none;
-      border-top: 1px solid #eee;
-      margin: 40px 0;
-    }
-    .section-title {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #888;
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 16px;
-    }
-    .contact {
-      margin-top: 40px;
-    }
-    .contact a {
-      color: #1a1a1a;
-      text-decoration: underline;
-      font-size: 16px;
-    }
-    footer {
-      padding: 32px;
-      border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #aaa;
-      text-align: center;
-    }
-    footer a {
-      color: #888;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-    footer a:hover { text-decoration: underline; }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
-<body>
+<body class="bg-gray-950 text-white font-sans antialiased">
 
-  <header>
-    <div class="logo">Kimjang Ventures <span>김앤장벤처스</span></div>
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <span class="text-lg font-bold tracking-tight text-white">KimJang Ventures</span>
+      <a href="#contact" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
+    </div>
   </header>
 
-  <main>
-    <h1>Mobile apps<br>people love to use.</h1>
-    <p class="subtitle">
-      모바일 앱 서비스를 만드는 회사입니다.<br>
-      We build mobile app services for everyday needs.
-    </p>
-
-    <hr class="divider" />
-
-    <div class="section-title">About / 소개</div>
-    <p>
-      Kimjang Ventures(김앤장벤처스)는 사람들의 일상에 실질적인 도움을 주는 모바일 앱 서비스를 개발·운영합니다.
-    </p>
-    <p>
-      Kimjang Ventures develops and operates mobile app services that provide real value in people's daily lives.
-    </p>
-
-    <hr class="divider" />
-
-    <div class="section-title">Contact / 문의</div>
-    <p>비즈니스 문의 · Business inquiries</p>
-    <div class="contact">
-      <a href="mailto:kimjangventures@gmail.com">kimjangventures@gmail.com</a>
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center px-6 pt-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-sm font-medium text-indigo-400 tracking-widest uppercase mb-6">KimJang Ventures</p>
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
+        AI로 운영하는<br />앱 서비스
+      </h1>
+      <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-10 max-w-xl mx-auto">
+        잠재력 있는 앱 서비스를 인수하고,<br />
+        AI 기반 운영 체계를 구축해 성장시킵니다.
+      </p>
+      <a href="#contact"
+        class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-lg transition-colors">
+        문의하기
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p>© 2026 Kimjang Ventures. All rights reserved.</p>
-    <p style="margin-top:8px;">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Terms of Service</a>
-    </p>
+  <!-- What We Do -->
+  <section class="py-24 px-6 border-t border-gray-800">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-16">What We Do</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-indigo-700 transition-colors">
+          <div class="text-3xl mb-4">🔍</div>
+          <h3 class="text-lg font-semibold mb-3">서비스 인수</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            검증된 앱 서비스를 발굴하고 인수합니다. 기술보다 운영 가능성을 봅니다.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-indigo-700 transition-colors">
+          <div class="text-3xl mb-4">⚙️</div>
+          <h3 class="text-lg font-semibold mb-3">AI 운영 체계 구축</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            반복 업무를 자동화하고 데이터 기반 운영 구조를 만들어 1인도 운영 가능한 체계를 구축합니다.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-indigo-700 transition-colors">
+          <div class="text-3xl mb-4">📈</div>
+          <h3 class="text-lg font-semibold mb-3">서비스 성장</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            운영 안정화 이후 사용자 경험과 수익 구조를 개선합니다.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 border-t border-gray-800">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p class="text-gray-400 mb-8">인수 제안, 협업 문의는 이메일로 연락주세요.</p>
+      <a href="mailto:kimjangventures@gmail.com"
+        class="text-indigo-400 hover:text-indigo-300 text-lg font-medium transition-colors">
+        kimjangventures@gmail.com
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-8 px-6 text-center text-gray-600 text-sm">
+    <p>© 2026 KimJang Ventures. All rights reserved.</p>
+    <p class="mt-1">주식회사 김앤장벤처스 | 사업자등록번호 812-87-04133</p>
   </footer>
 
 </body>
